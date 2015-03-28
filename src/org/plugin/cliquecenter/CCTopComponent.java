@@ -37,6 +37,7 @@ import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
+import org.osgi.framework.Bundle;
 
 /**
  * Top component which displays something.
@@ -72,8 +73,8 @@ public class CCTopComponent extends TopComponent {
 
     public CCTopComponent() {
         initComponents();
-        setName(Bundle.CTL_CCTopComponent());
-        setToolTipText(Bundle.HINT_CCTopComponent());
+        // setName(Bundle.CTL_CCTopComponent());
+        // setToolTipText(Bundle.HINT_CCTopComponent());
         putClientProperty(TopComponent.PROP_CLOSING_DISABLED, Boolean.TRUE);
         putClientProperty(TopComponent.PROP_DRAGGING_DISABLED, Boolean.TRUE);
         putClientProperty(TopComponent.PROP_SLIDING_DISABLED, Boolean.TRUE);
